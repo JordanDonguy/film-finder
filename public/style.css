@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: #0a0408;
+    z-index: 1;
+}
+
+.background {
+    background-image: url('./img/jacob-mejicanos-IM6t12LL7KM-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 1200px;
+}
+
+#appTitle {
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 3rem;
+    letter-spacing: .75rem;;
+    z-index: 2;
+    position: relative;
+    background-color: #0a0408;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#genreForm, #playBtn {
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+    font-family: 'Fredoka One', sans-serif;
+    z-index: 2;
+}
+
+#genres {
+    margin: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#movieInfo {
+    position: relative;
+    z-index: 2;
+    display: none;
+    width:  70%;
+    margin:  32px auto;
+   /*  background-color: rgba(0, 0, 0, 0.4); */
+    /* box-shadow: 0px 3px 3px 3px black; */
+
+}
+
+#movieInfo h1 {
+    text-align: center; 
+}
+
+#movieInfo:after {
+    position: relative;
+    z-index: 2;
+    content:  "";
+    display:  flex;
+    clear:  both;
+
+}
+
+#moviePoster, #movieText {
+    position: relative;
+    z-index: 2;
+    width:  50%;
+    float:  left;
+}
+
+img#moviePoster {
+    position: relative;
+    z-index: 2;
+    width:  100%;
+    height:  auto;
+    display:  block;
+    margin:  auto;
+    box-shadow: 1px 0px 6px black;
+}
+
+#movieText {
+    position: relative;
+    z-index: 2;
+    font-family: 'Questrial';
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+#movieTitle, #movieOverview {
+    position: relative;
+    padding:  32px;
+}
+
+#playBtn {
+    font-size: 25px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #B97828;
+    transition: background-color .15s, color .15s;
+    color: #fefefe;
+    cursor:  pointer;
+}
+
+#playBtn:hover {
+    background-color: #e88a17;
+    color: #000000;
+}
+
+#playBtn:active {
+    background-color: #B97828;
+    color: #ffffff;
+}
+
+label {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 200px;
+    height: auto;
+}
+
+#likeOrDislikeBtns {
+    text-align: center;
+    margin: 0px auto;  
+}
+
+#likeBtn, #dislikeBtn {
+    padding: 15px 25px;
+    font-size: 25px;
+    border-radius: 12px;
+    border-style: none;
+    cursor:  pointer;
+}
+
+#likeBtn {
+    background-color: #249e57;
+    color: darkgreen;
+}
+
+#dislikeBtn {
+    background-color: #c74a4a;
+    color: #910000;
+}
+
+@media only screen and (max-width: 1300px) {
+    #movieInfo {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #movieInfo {
+        width: 90%;
+    }
+    #movieTitle, #movieOverview {
+        padding:  16px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .background {
+        height: 1600px;
+    }
+
+    #movieInfo {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #movieText,
+    #moviePoster {
+        width:  86%;
+    }
+
+    img#moviePoster {
+        box-shadow: 1px 4px 6px black;
+        margin-top: 7vw;
+        margin-bottom: 16px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #appTitle {
+        letter-spacing: 0.6rem;
+    }
+
+    #movieInfo {
+        width: 92%;
+    }
+}
