@@ -11,3 +11,6 @@ Ce site web choisit un film aléatoirement parmis la base de données TMDB et l'
 
 ## Technologies utilisées
 HTML5, CSS et JavaScript. Cette application web utilise l'API de TMDB.
+
+## Lien vers le site web
+Le site web est déployé à l'adresse suivante : [https://jordandonguy.github.io/film-finder/](https://jordandonguy.github.io/film-finder/)
